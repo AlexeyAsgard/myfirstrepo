@@ -1,0 +1,28 @@
+name: Calc tabs in changed files
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Calc tabs
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: View for some changes
+        id: changed-files
+        uses: tj-actions/changed-files@v14.1
+
+      - name: List changed and calculate tabs
+        run: |
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            echo "$files was changed" >> output.log 2>&1
+            echo "Calc tab: `grep -P '\t' $file | wc -l`" >> output.log 2>&1
+          done
+      - name: Get artifact
+        uses: actions/upload-artifact@v3
+        with:
+          path: ./output.log
