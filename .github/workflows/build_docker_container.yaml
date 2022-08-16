@@ -28,7 +28,7 @@ jobs:
       #    context: .
       #    tags: alexeby/it-a/docker:latest
       - name: Build the Docker image # push The image to the docker hub
-        run: docker build . --file Dockerfile --tag alexeyby/it-a:${{ steps.date.outputs.date }}
+        run: docker build . --file Dockerfile --tag "alexeyby/it-a:${{ steps.date.outputs.date }}"
 
       - name: Docker Push
-        run: docker push alexeyby/it-a:${{ steps.date.outputs.date }}
+        run: docker push "alexeyby/it-a:${{ steps.date.outputs.date }}"
