@@ -20,10 +20,14 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PASS }}
 
-      -
-        name: Build and push
-        uses: docker/build-push-action@v3
-        with:
-          push: true
-          context: .
-          tags: alexeby/docker:latest
+      #-
+      #  name: Build and push
+      #  uses: docker/build-push-action@v3
+      #  with:
+      #    push: true
+      #    context: .
+      #    tags: alexeby/it-a/docker:latest
+      - name: Build the Docker image # push The image to the docker hub
+        run: docker build . --file Dockerfile --tag $DOCKER_USER/$REPO_NAME:${{ steps.date.outputs.date }}
+      - name: Docker Push
+        run: docker push ${{ secrets.DOCKERHUB_USER }}/it-a:${{ steps.date.outputs.date }}
