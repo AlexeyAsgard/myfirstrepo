@@ -16,8 +16,9 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USER }}
           password: ${{ secrets.DOCKERHUB_PASS }}
 
-      - name: Build the Docker image
-        run: docker build -t alexeyby/bottle:$(date +%s) .
-    
-      - name: Docker Push
-        run: docker push alexeyby/it-a
+      -
+        name: Build and push
+        uses: docker/build-push-action@v3
+        with:
+          push: true
+          tags: user/app:latest
