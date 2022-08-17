@@ -31,4 +31,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
+          file: 09.Docker/Dockerfile
           tags: alexeyby/docker:latest
