@@ -1,0 +1,1056 @@
+    1  ls -la
+    2  sudo apt-get install bash-completion
+    3  echo 'source <(kubectl completion bash)' >>~/.bashrc
+    4  cho 'alias k=kubectl' >>~/.bashrc
+    5  echo 'alias k=kubectl' >>~/.bashrc
+    6  echo 'complete -o default -F __start_kubectl k' >>~/.bashrc
+    7  source ~/.bashrc
+    8  cd ~/
+    9  sudo apt-get install bash-completion
+   10  kubectl get pods -
+   11  kubectl get pods -a
+   12  kubectl get pods -A
+   13  sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+   14  kubectl get pods -A -o wide
+   15  minikube delete
+   16  pwd
+   17  ls -la
+   18  cd repos
+   19  cd myfirstrepo
+   20  cd 11
+   21  ls -la
+   22  cd 11.K8s
+   23  ls -la
+   24  which minikube
+   25  dpkg -l | grep minikube
+   26  sudo dpkg --purge minikube
+   27  ~/11.Kub. alias
+   28  ./ alias
+   29  sudi ./ alias
+   30  cd ..
+   31  ls ~/repos/myfirstrepo/11.K8s. alias
+   32  minikube --version
+   33  minikube --v
+   34  minikube -v
+   35  where minikube
+   36  sudo rm /usr/local/bin/minikube
+   37  where minikube
+   38  curl -sfL https://get.k3s.io | sh -
+   39  kubectl get nodes
+   40  sudo kubectl get nodes
+   41  cat /var/lib/rancher/k3s/server/node-token
+   42  sudo cat /var/lib/rancher/k3s/server/node-token
+   43  curl -sfL https://get.k3s.io | K3S_URL=https://10.0.0.209:6443 K3S_TOKEN=K100e9294e444b5eb583241c35268e2eb1317eb45185d3d80ca72aeed6b1526f1d2::server:31357ffd39bb01a2e2db8d37389cc1a2 sh -
+   44  systemctl k3s-agent.service status
+   45  systemctl k3s-agent  status
+   46  systemctl status k3s-agent
+   47  kubectl get nodes
+   48  sudo kubectl get nodes
+   49  k3s -v
+   50  kubectl get pods 
+   51  k9s
+   52  kubectl get nodes
+   53  k3s start
+   54  pwd
+   55  ls -la
+   56  cd repos/myfirstrepo/
+   57  mkdir 12.Kubernates
+   58  cd 12.Kubernates
+   59  k9s
+   60  kubectl --vesion
+   61  kubectl --version
+   62  kubectl get nodes
+   63  k3s
+   64  k3s server start
+   65  sudo kubectl get nodes
+   66  sudo k3s server start
+   67  history | grep ssh
+   68  history
+   69  kubectl get pods -a\n
+   70  kubectl get pods -A\n
+   71  sh -o ProxyCommand="ssh -W %h:%p -q jump_sa@178.124.206.53" -L 6443:127.0.0.1:6443 root@192.168.203.35 -f -N
+   72  sh -o -L 6443:127.0.0.1:6443 root@192.168.203.35 -f -N
+   73  ssh -L 6443:127.0.0.1:6443 root@192.168.203.35 -f -N
+   74  ssh -L 6443:127.0.0.1:6443 root@192.168.203.7 -f -N
+   75  netstat | grep ssh
+   76  kubectl get pods -A\n
+   77  sudo k3s server start
+   78  kubectl get pods -A\n
+   79  k9s
+   80  cd repos/myfirstrepo/12.Kubernates
+   81  vim upd.yaml
+   82  kubectl get -f upd.yaml
+   83  vim upd.yaml
+   84  kubectl apply -f upd.yaml
+   85  vim upd.yaml
+   86  kubectl apply -f upd.yaml
+   87  kubectl stop
+   88  kubectl destroy
+   89  kubectl apply -f upd.yaml
+   90  kubectl --help
+   91  kubectl delete webserver*
+   92  kubectl delete
+   93  kubectl delete f upd.yaml
+   94  kubectl delete -f upd.yaml
+   95  sudo add-apt-repository ppa:yannubuntu/boot-repair.
+   96  зцв
+   97  sudo add-apt-repository ppa:yannubuntu/boot-repair.
+   98  sudo add-apt-repository ppa:yannubuntu/boot-repair
+   99  sudo apt update
+  100  sudo apt-get install boot-repair.
+  101  sudo apt-get install boot-repair
+  102  kubectl get nodes
+  103  ssh -L 6443:127.0.0.1:6443 root@192.168.203.7 -f -N
+  104  k3s start
+  105  k3s help
+  106  k3s server 
+  107  sudo k3s server
+  108  kubectl get nodes
+  109  k9s
+  110  k3s server
+  111  sudo k3s server
+  112  sudo apt install network-tools
+  113  sudo apt install network-manager
+  114  netstat
+  115  ps aux| grep ssh
+  116  kill 8096
+  117  ps aux| grep ssh
+  118  ssh -L 6443:127.0.0.1:6444 root@192.168.203.7 -f -N
+  119  ps aux| grep ssh
+  120  k3s server
+  121  sodo k3s server
+  122  sudo k3s server
+  123  ps aus: 6443
+  124  ps aux|grep  6443
+  125  kill 10485
+  126  ssh -L 6444:127.0.0.1:6443 root@192.168.203.7 -f -N
+  127  ssh -L 6445:127.0.0.1:6443 root@192.168.203.7 -f -N
+  128  ps aux|grep 6444
+  129  ps aux|grep 6445
+  130  kill 11021
+  131  kubeclt get nodes
+  132  kubectl get nodes
+  133  k3s server
+  134  sudo k3s server
+  135  kubectl get nodes
+  136  rm k3s/server/token
+  137  rm k3s/server/token/
+  138  rm -r k3s/server/token/
+  139  whereis k3s
+  140  cd /usr/local/bin/k3s/
+  141  sudo k3s server --token whatever
+  142  kubectl get nodes
+  143  curl -sfL https://get.k3s.io | sh -
+  144  sudo rm /usr/local/bin/kubectl; sudo rm /usr/local/bin/kubectl; sudo rm /usr/local/bin/kubectl; sudo rm /usr
+  145  sudo rm -r /usr/local/bin/kubectl
+  146  sudo rm /usr/local/bin/kubectl; sudo rm /usr/local/bin/kubectl; sudo rm /usr/local/bin/kubectl; sudo rm /usr
+  147  kubectl get nodes
+  148  curl -sfL https://get.k3s.io | sh -
+  149  kubectl get nodes
+  150  sudo kubeclt get nodes
+  151  kubeclt --write-kubeconfig-mode
+  152  kubeclt -write-kubeconfig-mode
+  153  rm -rf /.minikube /.minikube /.minikube /.minikube /.minikube /
+  154  rm -rf /.minikube 
+  155  curl -sfL https://get.k3s.io | sh -
+  156  sh /usr/local/bin/k3s-uninstall.sh
+  157  whereis k3s
+  158  systemctl  k3s restart 
+  159  curl -sfL https://get.k3s.io | sh -
+  160  systemctl status k3s
+  161  sudo k3s server
+  162  curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl
+  163  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  164  cho "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  165  echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  166  sudo apt-get update
+  167  sudo apt-get install -y kubectl
+  168  kubectl --version
+  169  kubectl get nodes
+  170  udo service k3s restart
+  171  sudo service k3s restart
+  172  journalctl -xeu k3s
+  173  curl -sfL https://get.k3s.io | sh -
+  174  sh /usr/local/bin/k3s-uninstall.sh
+  175  bash /usr/local/bin/k3s-uninstall.sh
+  176  cd /usr/local/bin/
+  177  ls -la
+  178  l3s-agent-uninstall.sh
+  179  sudo bash l3s-agent-uninstall.sh
+  180  sudo .l3s-agent-uninstall.sh
+  181  sudo .k3s-agent-uninstall.sh
+  182  sudo k3s-agent-uninstall.sh
+  183  ls -la
+  184  curl -sfL https://get.k3s.io | sh -
+  185  kubectl GET NODES
+  186  kubectl get nodes
+  187  k3s server
+  188  sudo k3s server
+  189  k9s
+  190  kubectl get nodes
+  191  ssh -L 6445:127.0.0.1:6443 root@192.168.203.7 -f -N
+  192  kubectl get nodes
+  193  which kubectl
+  194  ls -l /usr/local/bin/kubectl
+  195  ls -l /usr/bin/kubectl
+  196  kubectl version
+  197  /dev/lsusb
+  198  /dev/usbls
+  199  dev/
+  200  ls /dev/usb
+  201  ls /dev
+  202  ls /dev/usb
+  203  ls /dev | grep usb
+  204  python -v
+  205  python --version
+  206  sudo apt install python3
+  207  cd repos/wled
+  208  git clone git@github.com:Aircoookie/WLED.git
+  209  python3 --version
+  210  sudo apt install python3-distutils
+  211  ls /dev/tty*
+  212  df -h
+  213  ssh 10.0.0.1
+  214  ssh-copy-id 10.0.0.1
+  215  ssh-copy-id pi@10.0.0.1
+  216  ssh pi@10.0.0.1
+  217  ssh-copy-id pi@10.0.0.1
+  218  ssh pi@10.0.0.1
+  219  ls /dev/tty*
+  220  sudo chmod a+x /dev/USB0
+  221  sudo chmod a+x /dev/ttyUSB0
+  222  platformio lib search "header:FS.h"
+  223  cd repos/wled
+  224  history
+  225  git clone git@github.com:Aircoookie/WLED.git
+  226  sudo chmod a+x /dev/ttyUSB0
+  227  sudo chmod 777 /dev/ttyUSB0
+  228  cd /dev
+  229  ls -la
+  230  pip3 install wxpython
+  231  pip3 install esphomeflasher
+  232  cd .
+  233  cd ..
+  234  cd ~
+  235  pip3 install wxpython
+  236  k9s
+  237  k9s --headless
+  238  nslookup openhub'\nq;\n\n;\n\n\n\nopenhub\nquit\nexit
+  239  nslookup openhub;\nq;\n\n;\n\n\n\nopenhub\nquit\nexit
+  240  nslookup openhab;
+  241  ip config
+  242  ipconfig
+  243  ip ADDR
+  244  ip addr
+  245  cat /etc/resolv.conf
+  246  vi /etc/resolv.conf
+  247  dig tecmint.com
+  248  dig openhab
+  249  dig onliner.by
+  250  history
+  251  sudo chmod 777 /dev/ttyUSB0
+  252  cd repos
+  253  cd wled
+  254  history
+  255  git clone git@github.com:Aircoookie/WLED.git
+  256  sudo chmod 777 /dev/ttyUSB0
+  257  ls /dev/tty
+  258  ls /dev/tty*
+  259  cd repos/myfirstrepo
+  260  ls -la
+  261  cd 12.Kubernates
+  262  ls -la
+  263  k3s srart
+  264  k3s start
+  265  k3s server
+  266  sudo k3s server
+  267  netstat -a |grep 6443
+  268  ps -aux|grep 6443
+  269  kill 7371
+  270  ps -aux|grep 6443
+  271  ps -aux| grep 6443
+  272  k9s
+  273  k3s --version
+  274  k3s server
+  275  sudo k3s server
+  276  ssh root@192.168.203.7
+  277  k9s
+  278  kubectl get nodes
+  279  kubectl
+  280  kubectl config
+  281  kubectl config corrent-context
+  282  kubectl orrent-context
+  283  kubectl corrent-context
+  284  kubectl config corrent-context
+  285  kubectl config -h
+  286  kubectl get nodes
+  287  sudo apt install network-tools
+  288  ps -aux
+  289  sudo lsof -i -P -n | grep LISTEN 6443
+  290  k3s server
+  291  sudo k3s server
+  292  kubectl get nodes
+  293  cd /etc/rancher/k3s
+  294  ls -la
+  295  vim k3s.yaml
+  296  sudo vim k3s.yaml
+  297  sudo apt install net-tools
+  298  netstat -a
+  299  netstat -a | grep 6443
+  300  netstat -ntpa
+  301  s aux | grep 6443
+  302  ps aux | grep 6443
+  303  kill 11848
+  304  ps aux | grep 6443
+  305  k9s
+  306  ssh -o ProxyCommand="ssh -W %h:%p -q jump_sa@178.124.206.53" -L 6443:192.168.203.35:6443 root@192.168.203.35 -f -N
+  307  ssh -O cancel -L 6443:127.0.0.1:6443 192.168.203.7
+  308  ssh cancel -L 6443:127.0.0.1:6443 192.168.203.7
+  309  top
+  310  htop
+  311  sudo apt install htop
+  312  htop
+  313  sudo k3s server
+  314  netstat 
+  315  netstat |grep 6443
+  316  tcpkill port 6443
+  317  netstat tcpkill port 6443
+  318  lsof -i4
+  319  fuser 6443/tcp
+  320  sudo fuser 6443/tcp
+  321  kill 1558
+  322  sudo kill 1558
+  323  sudo fuser 6443/tcp
+  324  k3s server
+  325  sudo k3s server
+  326  sudo fuser 6443/tcp
+  327  sudo kill 12706
+  328  sudo fuser 6443/tcp
+  329  sudo k3s server
+  330  sudo fuser 6443/tcp
+  331  sudo kill 13022
+  332  kubectl get pods
+  333  k8s
+  334  k9s
+  335  kubectl get pods
+  336  /usr/local/bin/k3s-uninstall.sh
+  337  k3s server
+  338  echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+  339  sudo apt-get purge -y kubectl
+  340  kubectl
+  341  minikube
+  342  sudo apt install mc
+  343  mc
+  344  :q
+  345  10
+  346  ps aux | 6443
+  347  ps aux |grep 6443
+  348  sudo apt autoremove
+  349  sudo apt install -y kubectl
+  350  kubectl --version
+  351  kubectl -version
+  352  kubectl -v
+  353  kubectl --v
+  354  whereis k9s
+  355  k9s
+  356  curl -sfL https://get.k3s.io | sh -
+  357  kubectl get nodes
+  358  k3s kubectlget nodes
+  359  k3s kubectl get nodes
+  360  sudo k3s kubectl get nodes
+  361  k9s
+  362  snap install spotify
+  363  vim ~/.ssh/config
+  364  ssh -L 6443:127.0.0.1:6444 root@192.168.203.7 -f -N
+  365  ssh -L 6444:127.0.0.1:6443 root@192.168.203.7 -f -N
+  366  ps -ef | grep ssh
+  367  kill -9 8914
+  368  kill -9 8946
+  369  ps -ef | grep ssh
+  370  kill -9 9339
+  371  ps -ef | grep ssh
+  372  kubectl get nodes
+  373  export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+  374  kubectl get nodes
+  375  cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  376  sudo cp /etc/rancher/k3s/k3s.yaml ~/.kube/config
+  377  export KUBECONFIG=~/.kube/config
+  378  kubectl get nodes
+  379  chmod a+x ~/.kube/config
+  380  sudo chmod a+x ~/.kube/config
+  381  kubectl get nodes
+  382  sudo kubectl get node\s
+  383  sudo kubectl get nodes
+  384  kubectl get config
+  385  sudo kubectl get config
+  386  su k3s 
+  387  su
+  388  SU
+  389  sudo K3S kubectl get NODES
+  390  sudo K3S kubectl get nodes
+  391  sudo k3s kubectl get nodes
+  392  sudo k3s kubectl get pods
+  393  kubectl --kubeconfig=/etc/rancher/k3s/k3s.yaml  get nodes
+  394  sudo chmod 777 /etc/rancher/k3s/k3s.yaml
+  395  kubectl --kubeconfig=/etc/rancher/k3s/k3s.yaml  get nodes
+  396  kubectl get nodes
+  397  sudo chmod 777 ~/.kube/config
+  398  kubectl get nodes
+  399  k9s
+  400  systemctl resrart k3s
+  401  systemctl restart k3s
+  402  kubectl get nodes
+  403  k9s
+  404  kubectl get nodes
+  405  k9s
+  406  kubectl get nodes
+  407  ssh  -L 6443:127.0.0.1:6444 root@192.168.203.7 -f -N
+  408  ssh  -L 6444:127.0.0.1:6443 root@192.168.203.7 -f -N
+  409  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N
+  410  kubectl get nodes
+  411  k9s
+  412  cd repos/myfirstrepo
+  413  cd 11.K8s
+  414  ls -la
+  415  rm k9s_Linux_x86_64.tar.gz
+  416  rm -rf kubectl
+  417  ls -la
+  418  rm config
+  419  kubectl get no -wide
+  420  kubectl get o -wide
+  421  kubectl get no -o wide
+  422  kubectl config view
+  423  kubectl cluster-info    
+  424  kubectl get services  
+  425  alias k=kubectl
+  426  alias kgn=kubectl get nodes
+  427  alias kgp=kubectl get pods
+  428  k get nodes
+  429  kgn
+  430  kgp
+  431  k get pods
+  432  k get nodes
+  433  alias kgp=kubectl get nodes
+  434  kgp
+  435  alias kgp=kubectl get nodes
+  436  kgp
+  437  kubectl get nodes
+  438  ubectl config use-context default
+  439  kubectl config use-context default
+  440  kubectl get nodes
+  441  kubectl config use-context cluster.local
+  442  kubectl get config
+  443  k9s config
+  444  k9s --help
+  445  k9s -A
+  446  kubectl config use-context kubernates.admin@cluster.local
+  447  k9s
+  448  kubectl config use-context kubernates-admin@cluster.local
+  449  kubectl config use-context kubernetes-admin@cluster.local
+  450  kubectl get nodes
+  451  k9s
+  452  cp ./*png ~/repos/myfirstrepo/11.K8s
+  453  cd ~/repos/myfirstrepo/11.K8s
+  454  ls -la
+  455  touch README.md
+  456  alias kc=kubectl config use-context kubernetes-admin@cluster.local
+  457  alias kl=kubectl config use-context default
+  458  kl
+  459  alias kl="kubectl config use-context default"
+  460  kl
+  461  history
+  462  alias kc="kubectl config use-context kubernetes-admin@cluster.local"
+  463  cat ~/.bash
+  464  cat ~/.bash/ls
+  465  cd ~/.bash/
+  466  cat ~/.bash.rc
+  467  kubectl get kubectl config view
+  468  kubectl config view
+  469  git add ./
+  470  git status
+  471  git commit -m "My 11.k8s_install homework" 
+  472  git push
+  473  mc
+  474  cd ~/repos/sa.it-academy.by/Alexey_Dubailo/11.K8s
+  475  git add --all
+  476  git status
+  477  git commit -m "My 11.K8s_install homework"
+  478  git push origin
+  479  k3s stop
+  480  sudo k3s status
+  481  sudo systemctl stop k3s
+  482  sudo systemctl disable k3s
+  483  kubectl get nodes
+  484  k9s
+  485  sudo systemctl enable k3s
+  486  sudo systemctl start k3s
+  487  kubectl get nodes
+  488  kc
+  489  kgn
+  490  alias kgn="kubectl get nodes"
+  491  kgn
+  492  history
+  493  sudo systemctl stop k3s
+  494  sudo systemctl start k3s
+  495  ps -ef | grep ssh\n
+  496  kill 13562
+  497  ps -ef | grep ssh\n
+  498  kgn
+  499  k9s
+  500  ssh root@192.168.203.7
+  501  kgn
+  502  ps -ef | grep ssh\n
+  503  kill 13567
+  504  kill 13551
+  505  ps -ef | grep ssh\n
+  506  kgn
+  507  history
+  508  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  509  kgn
+  510  kl
+  511  kgn
+  512  k9s
+  513  exit
+  514  dmesg
+  515  sudo dmesg
+  516  ls /dev/ttyUSB*\n
+  517  ls -la
+  518  cd repos
+  519  mkdir tmp
+  520  cd tmp
+  521  git clone git@github.com:juliagoda/CH341SER.git
+  522  sudo pacman -S arduino arduino-docs avr-binutils avr-gcc avr-libc avrdude
+  523  sudo apt install pacman
+  524  sudo pacman -S arduino arduino-docs avr-binutils avr-gcc avr-libc avrdude
+  525  sudo apt install pacman
+  526  pacman -version
+  527  sudo apt purge  pacman
+  528  cd CH341SER
+  529  make
+  530  make load
+  531  sudo make load
+  532  dsmeg
+  533  sudo dmesg
+  534  ls /dev/tty*
+  535  chmod 777 /dev/ttyUSB0
+  536  sudo dmesg
+  537  sudo snap install mqtt-explorer
+  538  curl -X POST -H "Content-Type: application/json" \\n     -d '{"staircase":{"bottom-sensor":true}}' \\n     10.0.0.38/json/state\n
+  539  ip addr
+  540  sudo apt install dicker
+  541  sudo apt install docker
+  542  sudo apt update
+  543  sudo apt upgrade
+  544  docker -v
+  545  whereis  docker
+  546  sudo apt install -y ca-certificates curl gnupg lsb-release
+  547  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  548  echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  549  sudo apt-get update
+  550  sudo apt install docker-ce docker-ce-cli containerd.io -y
+  551  sudo usermod -aG docker $USER
+  552  newgrp docker
+  553  udo systemctl status docker
+  554  sudo systemctl status docker
+  555  docker run hello-world
+  556  k9s
+  557  histoey
+  558  history
+  559  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  560  k9s
+  561  cd repos/myfirstrepo
+  562  ls -la
+  563  mkdir 13.K8s
+  564  mv 13.K8s 14.K8s
+  565  ls -la
+  566  cd 14.K8s
+  567  docker build -t jfrog.it-academy.by/public/jenkins-ci:adubailo .
+  568  docker login jfrog.it-academy.by
+  569  docker build -t jfrog.it-academy.by/public/jenkins-ci:adubailo .
+  570  docker push jfrog.it-academy.by/public/jenkins-ci:adubailo
+  571  ssh root@192.168.203.7
+  572  kc
+  573  kubectl get nodes
+  574  kubectl config use-context kubernetes-admin@cluster.local"
+  575  kubectl config use-context kubernetes-admin@cluster.local
+  576  kubectl get nodes
+  577  history
+  578  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  579  kubectl get nodes
+  580  ps -ex 
+  581  ps -ex | grep ssh
+  582  ps -ef | grep ssh
+  583  kill 23104
+  584  kill 64528
+  585  ps -ef | grep ssh
+  586  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  587  kubectl get nodes
+  588  kubectl apply -f jenkins.yaml
+  589  ls -la
+  590  kubectl apply -f jenkins.yaml
+  591  k9s
+  592  kubectl apply -f jenkins.yaml
+  593  kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+  594  wget https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml -O ms.yaml
+  595  kubectl apply -f ms.yaml
+  596  vim /etc/hosts
+  597  kubectl apply -f ms.yaml
+  598  vim /etc/hosts
+  599  sudo vim /etc/hosts
+  600  vim /etc/hosts
+  601  kubectl apply -f jenkins.yaml
+  602  kubectl stop -f jenkins.yaml
+  603  kubectl replace --force -f jenkins.yaml
+  604  kubectl apply -f jenkins.yaml
+  605  k9s
+  606  kubectl get nodes
+  607  kubectl get pods
+  608  kubectl apply -f jenkins.yaml
+  609  ssh root@192.168.203.7
+  610  k9s --headless
+  611  kubectl apply -f jenkins.yaml
+  612  kubectl get namespaces
+  613  kubeclt create namespace argocd
+  614  kubectl create namespace argocd
+  615  kubectl get namespace ci-cd -o yaml
+  616  kubectl get namespace ci-cd -o yaml > tmp.yaml
+  617  ssh root@192.168.203.7
+  618  ping 192.168.203.7
+  619  k9s
+  620  ssh root@192.168.203.7
+  621  kubectl apply -f jenkins.yaml
+  622  history
+  623  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  624  kubectl apply -f jenkins.yaml
+  625  k9s --headless
+  626  kubectl 
+  627  kubectl describe 
+  628  kubectl describe ci-cd2
+  629  kubectl describe --help
+  630  kubectl describe pods jenkins
+  631  kubectl get pods
+  632  kubectl get namespaces
+  633  kubectl describe pods -A 
+  634  kubectl describe --help
+  635  kubectl describe pod -f jenkins.jaml
+  636  kubectl describe pod -f jenkins
+  637  kubectl describe ci-cd2 pods
+  638  kubectl describe ci-cd2
+  639  kubectl describe pods
+  640  kubectl describe pods ci-cd2
+  641  kubectl describe pods --namespace ci-cd2 
+  642  ssh root@192.168.203.7
+  643  kubectl apply -f jenkins.yaml
+  644  kubectl describe pods --namespace ci-cd2 
+  645  kubectl apply -f jenkins2.yaml -n ci-cd2
+  646  kubectl apply -f jenkins2.yaml --namespace=ci-cd2
+  647  kubectl apply -f jenkins2.yaml --namespace=ci-cd
+  648  kubectl apply -f jenkins2.yaml
+  649  kubectl describe pods --namespace ci-cd3 
+  650  kubectl apply -f jenkins2.yaml
+  651  kubectl describe pods --namespace ci-cd3 
+  652  kubectl describe pods --namespace ci-cd2
+  653  kubectl describe pods --namespace ci-cd3
+  654  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  655  k9s
+  656  history
+  657  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  658  k9s --headless
+  659  kubectl get nodes
+  660  kubectl apply -f nginx.yaml
+  661  cd ..
+  662  cd 12.K8s\ first\ deploy
+  663  kubectl apply -f nginx.yaml
+  664  k9s --headless
+  665  sudo vim /ets/hosts
+  666  sudo vim /etc/hosts
+  667  git add .
+  668  git status
+  669  git commit -m "My 12. K8s First deployment homework"
+  670  git push
+  671  cp -r repos/myfirstrepo/12.K8s.\ First\ deployment ./repos/sa.it-academy.by/Alexey_Dubailo
+  672  cd repos/sa.it-academy.by/Alexey_Dubailo/12.K8s.\ First\ deployment
+  673  git add .
+  674  git status
+  675  git add commit -m "My 12.K8s homework"
+  676  git commit -m "My 12.K8s homework"
+  677  git push origin
+  678  ip addr
+  679  helm 
+  680  wget https://get.helm.sh/helm-v3.9.4-linux-amd64.tar.gz
+  681  tar -xzvf helm-v3.9.4-linux-amd64.tar.gz
+  682  sudo mv linux-amd64 /usr/local/bin
+  683  rm -rf helm-v3.9.4-linux-amd64.tar.gz
+  684  helm version
+  685  sudo mv linux-amd64/helm /usr/local/bin
+  686  tar -xzvf helm-v3.9.4-linux-amd64.tar.gz
+  687  wget https://get.helm.sh/helm-v3.9.4-linux-amd64.tar.gz
+  688  tar -xzvf helm-v3.9.4-linux-amd64.tar.gz
+  689  sudo mv linux-amd64/helm /usr/local/bin
+  690  helm version
+  691  rm -rf helm-v3.9.4-linux-amd64.tar.gz
+  692  rm -rf linux-amd64
+  693  ls -la
+  694  св
+  695  вв
+  696  cd repos/myfirstrepo/13.K8s.Helm
+  697  helm create joomla-app
+  698  chmod go-r ~/.kube/config
+  699  helm create joomla-app
+  700  helm version
+  701  ls ~/.kube/config
+  702  ls -la ~/.kube/config
+  703  ls -la
+  704  cd joomla-app
+  705  ls -la
+  706  vim Chart.yaml
+  707  k9s
+  708  history
+  709  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N\n
+  710  k9s
+  711  vim Chart.yaml
+  712  cd ..
+  713  wget https://github.com/pluhin/sa.it-academy.by/blob/md-sa2-21-22/demo/12.K8s/app.yaml
+  714  ls -la
+  715  sudo vim /etc/host
+  716  sudo vim /etc/hosts
+  717  help package joomla-app
+  718  helm package joomla-app
+  719  cd joomla-app
+  720  help package joomla-app
+  721  helm package joomla-app
+  722  cd ..
+  723  helm package joomla-app
+  724  ls -la
+  725  help repo index --url https://github.com/AlexeyAsgard/demo-helm.git .
+  726  helm repo index --url https://github.com/AlexeyAsgard/demo-helm.git .
+  727  git init
+  728  git init .
+  729  git commit .
+  730  git commit ./.
+  731  git status
+  732  git add --all
+  733  git status
+  734  git branch -M main
+  735  git remote add origin https://github.com/AlexeyAsgard/demo-helm.git
+  736  git push origin main
+  737  git branch -a
+  738  git branch -A
+  739  git branch 
+  740  git branch -a
+  741  git status
+  742  git remote -v
+  743  git push origin
+  744  git push --set-upstream origin main
+  745  git commit -m "First commit"
+  746  git push --set-upstream origin main
+  747  helm repo index --url https://github.com/AlexeyAsgard/demo-helm.git .
+  748  vim index.yaml
+  749  git add --all
+  750  git commit -m "First version"
+  751  git push
+  752  helm repo add helm_demo https://github.com/AlexeyAsgard/demo-helm.git .
+  753  helm repo add helm_demo https://github.com/AlexeyAsgard/demo-helm.git
+  754  helm repo add helm_demo https://github.com/AlexeyAsgard/demo-helm
+  755  git status
+  756  helm repo add helm_demo https://github.com/AlexeyAsgard/demo-helm/
+  757  helm repo add helm_demo https://alexeyasgard.github.io/demo-helm/
+  758  helm repo update
+  759  helm search repo app -l
+  760  vim joomla-app/Chart.yaml
+  761  vim joomla-app/values.yaml
+  762  vim joomla-app/templates/ingress.yaml
+  763  vim joomla-app/templates/pv.yaml
+  764  vim joomla-app/templates/pvc.yaml
+  765  vim joomla-app/templates/pv.yaml
+  766  vim joomla-app/templates/pvc.yaml
+  767  vim joomla-app/templates/deployment.yaml
+  768  vim joomla-app/Chart.yaml
+  769  helm repo index --url https://github.com/AlexeyAsgard/demo-helm.git -merge index.yaml .
+  770  helm repo index --url https://github.com/AlexeyAsgard/demo-helm.git --merge index.yaml .
+  771  help package joomle-app
+  772  ls-la
+  773  ls -la
+  774  help pakage joomla-app
+  775  helm pakage joomla-app
+  776  helm package joomla-app
+  777  ls -la
+  778  vim index.yaml
+  779  helm repo index --url https://github.com/AlexeyAsgard/demo-helm.git --merge index.yaml .
+  780  vim index.yaml
+  781  git add --all
+  782  git commit -m "Add PV and PVC"
+  783  git push origin
+  784  helm repo update
+  785  help search repo app -l
+  786  helm search repo app -l
+  787  helm install joomla-app helm_demo/joomla-app --version 0.2.0
+  788  helm install joomla-app helm_demo/joomla-app --version v0.2.0
+  789  helm install joomla-app helm_demo/joomla-app
+  790  vim index.yaml
+  791  helm pakage joomla-app
+  792  helm package joomla-app
+  793  helm search repo
+  794  helm search repo app -l
+  795  helm search repo app
+  796  helm search repo -l
+  797  helm install joomla-app helm_demo 
+  798  helm install joomla-app helm_demo --version v0.2.0
+  799  vim index.yaml
+  800  git commit -m
+  801  git commit -m "Index fixes"
+  802  git add --all
+  803  git commit -m "Index fixes"
+  804  git pusj origin
+  805  git push origin
+  806  helm repo index --url https://alexeyasgard.github.io/demo-helm/ --merge index.yaml .
+  807  git push origin
+  808  git status
+  809  git add --all
+  810  git commit -m "One more commit"
+  811  git push origin
+  812  helm install joomla-app helm_demo --version v0.2.0
+  813  helm search repo app -l
+  814  helm install joomla-app helm_demo/joomla-app --version v0.2.0
+  815  helm install joomla-app helm_demo/joomla-app --version 0.2.0
+  816  https://alexeyasgard.github.io/demo-helm/joomla-app-0.2.0.tg
+  817  helm install joomla-app helm_demo/joomla-app --version v0.1.0
+  818  helm repo --help
+  819  helm repo lis
+  820  helm repo list
+  821  git add --all
+  822  git commit -m "First commite second"
+  823  git push origin
+  824  helm repo index --url https://alexeyasgard.github.io/demo-helm/ .
+  825  helm repo update
+  826  helm search repo -l
+  827  git add --all
+  828  git commit -m "Third version of aplication"
+  829  git push origin
+  830  helm repo index --url https://alexeyasgard.github.io/demo-helm/ --merge index.yaml 
+  831  help package joomla-app
+  832  helm package joomla-app
+  833  helm repo index --url https://alexeyasgard.github.io/demo-helm/ --merge index.yaml .
+  834  vim index.yaml
+  835  git add --all
+  836  git commit -m "One more"
+  837  git pusj origin
+  838  git push origin
+  839  helm repo update
+  840  helm search repo -l
+  841  helm search repo app -l
+  842  helm search repo app 
+  843  helm search repo app -l
+  844  helm search repo app -la
+  845  helm search repo app -a
+  846  helm search repo app -l
+  847  helm update
+  848  helm  repo update
+  849  helm search repo app -l
+  850  helm install joomla-app helm_demo/joomla-app --version v0.3.0
+  851  git add --all
+  852  git commit -m "I can do it"
+  853  git push origin
+  854  helm install joomla-app helm_demo/joomla-app --version v0.3.0
+  855  ls -la
+  856  rm -r .git
+  857  rm -r .git -y
+  858  rm -rf .git 
+  859  ls -la
+  860  git status
+  861  git add --all
+  862  git commit 
+  863  git remote -v
+  864  git push origin
+  865  git status
+  866  ls -la
+  867  helm deploy first-app
+  868  helm create first-app
+  869  ls la
+  870  ls -la
+  871  cd first-app/
+  872  ls -ls
+  873  helm package first-app
+  874  ls -la
+  875  git init ,
+  876  git init .
+  877  git commit -m "first commit"
+  878  git branch -M main
+  879  git remote add origin git@github.com:AlexeyAsgard/helm-demo.git
+  880  git push -u origin main
+  881  git log --oneline
+  882  git add --all
+  883  git status
+  884  git add --all
+  885  git add .
+  886  git add --all
+  887  git commit -m "first commit"
+  888  git push -u origin main
+  889  ls -la
+  890  cd ..
+  891  ls -la
+  892  rm -r ./.git
+  893  rm -r first-app/.git
+  894  y
+  895  ls -la
+  896  cd first-app
+  897  ls -la
+  898  cd ..
+  899  ls -la
+  900  git init .
+  901  git remote add origin git@github.com:AlexeyAsgard/helm-demo.git
+  902  git add --all
+  903  git status
+  904  git commit -m "first commit"
+  905  git push origin
+  906  git push --set-upstream origin main
+  907  ls -la
+  908  git status
+  909  git log
+  910  git branch main
+  911  git push --set-upstream origin main
+  912  git push --set-upstream origin main -f
+  913  help repo index --url https://alexeyasgard.github.io/helm-demo/ .
+  914  helm repo index --url https://alexeyasgard.github.io/helm-demo/ .
+  915  vim index.yaml
+  916  git add --all
+  917  git commit -m "First version"
+  918  git push origin
+  919  git push --set-upstream origin main
+  920  git status
+  921  ls -la
+  922  git add --all
+  923  git status
+  924  git branch -M main
+  925  vim index.yaml
+  926  git add --all
+  927  git commit -m "First version"
+  928  git status
+  929  git log 
+  930  git push origin
+  931  helm repo add helm_demo https://alexeyasgard.github.io/helm-demo/
+  932  helm repo add helm_demo2 https://alexeyasgard.github.io/helm-demo/
+  933  helm repo update
+  934  helm repo remove helm_demo helm_demo2
+  935  helm repo add helm_demo https://alexeyasgard.github.io/helm-demo/
+  936  help repo update
+  937  helm repo update
+  938  helm search repo app -l
+  939  helm repo index https://alexeyasgard.github.io/helm-demo/ --merge index.yaml . 
+  940  helm repo index --url https://alexeyasgard.github.io/helm-demo/ --merge index.yaml . 
+  941  vim index.yaml
+  942  git status
+  943  git add --all
+  944  git status
+  945  help package first-app
+  946  ls -la
+  947  helm package first-app
+  948  ls -la
+  949  helm repo index --url https://alexeyasgard.github.io/helm-demo/ --merge index.yaml . 
+  950  vim index.yaml
+  951  git add --all
+  952  git commit -m "Add VC and PVC"
+  953  git push
+  954  helm repo update
+  955  helm search repo app -l
+  956  helm repo update
+  957  helm search repo app -l
+  958  helm repo update
+  959  helm search repo app -l
+  960  helm search repo 
+  961  helm search repo app -l
+  962  helm repo update
+  963  helm search repo app -l
+  964  helm install first-app helm_demo/first-app --version v0.2.0
+  965  sudo /etc/hosts
+  966  sudo vim /etc/hosts
+  967  curl http://helm-app.k8s-7.sa/
+  968  k9s
+  969  ls -la
+  970  helm repo view
+  971  helm repo list
+  972  helm repo add bitnami https://charts.bitnami.com/bitnami
+  973  helm repo list
+  974  helm repo update
+  975  helm uninstall first-app
+  976  historyhistory
+  977  history
+  978  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N
+  979  kubectl get nodes
+  980  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N
+  981  kubectl get nodes
+  982  helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \\n    --set nfs.server=192.168.37.105 \\n    --set nfs.path=/mnt/IT-Academy/nfs-data/sa2-21-22/
+  983  helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
+  984  help repo update
+  985  helm repo update
+  986  helm install nfs-subdir-external-provisioner nfs-subdir-external-provisioner/nfs-subdir-external-provisioner \\n    --set nfs.server=192.168.37.105 \\n    --set nfs.path=/mnt/IT-Academy/nfs-data/sa2-21-22/
+  987  history
+  988  ssh  -L 6453:127.0.0.1:6443 root@192.168.203.7 -f -N
+  989  cd repos/myfirstrepo/13.K8s.Helm
+  990  ls -la
+  991  vim joomla.yaml
+  992  vim wordpress.yaml
+  993  ls -la
+  994  vim ansible.cfg
+  995  cat ansible.cfg
+  996  vim ansible.cfg
+  997  vim dbconfig.yaml
+  998  vim inventory.yaml
+  999  ls -la
+ 1000  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1001  ssh root@192.168.203.8
+ 1002  ssh-copy-id root@192.168.203.8
+ 1003  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1004  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/drupal
+ 1005  kubectl apply -f drupal.yaml
+ 1006  ls -la
+ 1007  kubectl apply -f drupal.yaml
+ 1008  k9s
+ 1009  kubectl get pods
+ 1010  kubectl exec sa-drupal
+ 1011  kubectl exec sa-drupal-b65846fd4-n42s6
+ 1012  kubectl exec sa-drupal-b65846fd4-n42s6 -it
+ 1013  kubectl exec -it sa-drupal-b65846fd4-n42s6
+ 1014  sudo vim /etc/hosts
+ 1015  k9s
+ 1016  helm uninstall sa-wordpress
+ 1017  helm uninstall sa-drupal
+ 1018  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/drupal
+ 1019  k9s
+ 1020  kubectl describe sa-drupal
+ 1021  kubectl describe
+ 1022  kubectl describe pods sa-drupal
+ 1023  k9s
+ 1024  ssh root@192.168.202.8
+ 1025  ssh root@192.168.203.8
+ 1026  history
+ 1027  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1028  cd repos/myfirstrepo/13.K8s.Helm
+ 1029  ls -la
+ 1030  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1031  history
+ 1032  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/drupal
+ 1033  helm uninstall sa-drupal
+ 1034  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/drupal
+ 1035  kubectl apply -f drupal.yaml
+ 1036  helm uninstall sa-drupal
+ 1037  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password drupal
+ 1038  helm install sa-drupal  --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/drupal
+ 1039  helm install sa-wordpress --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/wordpress
+ 1040  helm uninstall sa-wordpress
+ 1041  helm install sa-wordpress --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,mariadb.auth.database=bitnami_wordpress,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/wordpress
+ 1042  kubectl apply -f wordpress.yaml
+ 1043  helm uninstall sa-wordpress
+ 1044  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1045  helm install sa-wordpress --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,mariadb.auth.database=bitnami_wordpress,global.storageClass=nfs-client,drupalUsername=admin,drupalPassword=password bitnami/wordpress
+ 1046  helm uninstall sa-wordpress
+ 1047  helm install sa-wordpress --set mariadb.enabled=false,externalDatabase.host=192.168.203.8,externalDatabase.user=user_db,externalDatabase.password=pass_db,mariadb.auth.database=bitnami_wordpress,global.storageClass=nfs-client,wordpressUsername=admin,wordpressPassword=password bitnami/wordpress
+ 1048  helm uninstall sa-drupal
+ 1049  helm status
+ 1050  helm help
+ 1051  helm status help
+ 1052  kubectl describe sa-wordpress
+ 1053  kubectl describe pod sa-wordpress
+ 1054  kubectl apply -f wordpress.yaml
+ 1055  ansible-playbook -i inventory.yaml dbinstallandcleate.yaml
+ 1056  history > ~history.txt
