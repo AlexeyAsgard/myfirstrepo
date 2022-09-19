@@ -89,7 +89,7 @@ metadata:
     kubernetes.io/ingress.class: nginx
 spec:
   rules:
-    - host: graffana.k8s-7.sa
+    - host: grafana.k8s-7.sa
       http:
         paths:
           - path: /
