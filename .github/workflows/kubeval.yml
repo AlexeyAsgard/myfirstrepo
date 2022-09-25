@@ -11,7 +11,7 @@ jobs:
       - name: Get manifests
         uses: actions/checkout@v2
         id: files
-      - run: echo "::set-output name=matrix::$(ls manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')" 
+      - run: echo "::set-output name=matrix::$(ls 17.QA/manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')" 
   validate_manifest:
     needs: look_for_manifest
     runs-on: ubuntu-latest
