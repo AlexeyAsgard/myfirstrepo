@@ -1,0 +1,57 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zabbix-server
+  namespace: monitoring
+  labels:
+    app: zabbix-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: zabbix-server
+  template:
+    metadata:
+      labels:
+        app: zabbix-server
+    spec:
+      containers:
+      - name: zabbix-server
+        #image: zabbix/zabbix-appliance 
+        image: zabbix/zabbix-server-mysql:latest
+        env:
+        - name: DB_SERVER_HOST
+          value: "192.168.203.8"
+        - name: MYSQL_USER
+          value: "zabbix"
+        - name: MYSQL_PASSWORD
+          value: "zabbix"
+        - name: MYSQL_DATABASE
+          value: "zabbix"
+        ports:
+          - name: connect
+            containerPort: 10050
+        resources:
+          requests:
+            cpu: 300m
+            memory: 500Mi
+          limits:
+            cpu: 500m
+            memory: 1000Mi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: zabbix-service
+  namespace: monitoring
+  labels:
+    run: zabbix-service
+spec:
+  type: ClusterIP
+  selector:
+    app: zabbix-server
+  ports:
+    - name: connect
+      port: 10050
+      targetPort: connect
