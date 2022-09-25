@@ -15,11 +15,11 @@ jobs:
               FILES="$(ls -d ./manifests/* | jq -R -s -c 'split("\n")[:-1]')"
               echo "files=`echo -n $FILES`" >> $GITHUB_ENV
   validate_manifest:
-    needs: read-manifests
+    needs: look_for_manifest
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        k8s-files: ${{fromJson(needs.read-manifests.outputs.files)}}
+        k8s-files: ${{fromJson(needs.look_for_manifest.outputs.files)}}
       fail-fast: false
     steps:
     - uses: actions/checkout@v2 
