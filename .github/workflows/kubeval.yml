@@ -1,41 +1,40 @@
-name: Validate manifests
+name: k8s manifests validation
 
-on: [push, pull_request]
+on: push
 
 jobs:
-  look_for_manifest:
+  list-manifests:
     runs-on: ubuntu-latest
     outputs:
-      files: ${{ env.files }}
+       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - name: Get manifests
-        uses: actions/checkout@v2
-        id: files
-      - run: echo "::set-output name=matrix::$(ls 17.QA/manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')" 
-  validate_manifest:
-    needs: look_for_manifest
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        k8s-files: ${{fromJson(needs.look_for_manifest.outputs.files)}}
-      fail-fast: false
-    steps:
-    - uses: actions/checkout@v2 
-    - name: Test with kubeval
-      uses: instrumenta/kubeval-action@master
-      with: 
-       files: ${{matrix.k8s-files}}
-
-  send_notification:
-    needs: validate_manifest
-    runs-on: ubuntu-latest
-    steps:
-    - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_CHANNEL: '#builds'
-        SLACK_COLOR: ${{ job.status }}
-        SLACK_MESSAGE: 'Post Content :rocket:'
-        SLACK_TITLE: 'Kubeval validatuion - Completed!'
-        SLACK_USERNAME: GitHub
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Checkout
+        uses: actions/checkout@v2.4.2
+      - id: set-matrix
+        run: echo "::set-output name=matrix::$(ls manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')" 
+  kubeval:
+     needs: list-manifests
+     runs-on: ubuntu-latest
+     strategy:
+         matrix:
+             manifest: ${{ fromJson(needs.list-manifests.outputs.matrix) }}
+     steps:
+       - uses: actions/checkout@v2.4.2     
+       - name: Validate manifests by kubeval 
+         uses: instrumenta/kubeval-action@master
+         with:
+           files: ${{ matrix.manifest }}
+  slackNotification:
+      needs: kubeval
+      runs-on: ubuntu-latest
+      steps:
+      - name: Slack Notify
+        uses: rtCamp/action-slack-notify@v2.2.0
+        env:
+          SLACK_CHANNEL: 'build'
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: '${{ job.status }} :rocket:'
+          SLACK_TITLE: Manifests validation (kubeval)
+          SLACK_USERNAME: rtCamp
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}          
