@@ -11,9 +11,7 @@ jobs:
       - name: Get manifests
         uses: actions/checkout@v2
         id: files
-      - run: |
-              FILES="$(ls -d ./manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')"
-              echo "files=`echo -n $FILES`" >> $GITHUB_ENV
+      - run: echo "::set-output name=matrix::$(ls manifests/*.yaml | jq -R -s -c 'split("\n")[:-1]')" 
   validate_manifest:
     needs: look_for_manifest
     runs-on: ubuntu-latest
