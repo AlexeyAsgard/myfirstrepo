@@ -1,6 +1,7 @@
 name: Test for manifests
 
-on: [push, pull_request]
+#on: [push, pull_request]
+on: push
 
 jobs:
   find-files:
