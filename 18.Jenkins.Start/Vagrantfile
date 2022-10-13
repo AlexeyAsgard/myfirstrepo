@@ -37,7 +37,7 @@ Vagrant.configure("2") do |config|
     config.vm.box = "roboxes/ubuntu2004"
     config.vm.box_version = "4.1.12"
     config.vm.define "Jenkins"
-    config.vm.network "public_network", ip: "10.44.44.5"
+    config.vm.network "public_network", ip: "10.44.44.20"
     config.vm.provider :vmware_esxi do |esxi|
         esxi.esxi_hostname = '10.10.10.10'
         esxi.esxi_username = 'root'
@@ -47,7 +47,7 @@ Vagrant.configure("2") do |config|
     #    3) 'env:'  or 'env:my_secret_env_var'
     #    4) 'key:'  or  key:~/.ssh/some_ssh_private_key'
     #    5) or esxi.esxi_password = 'my_esxi_password'
-        esxi.esxi_password = '!VfcnthGfhjkm2022' #secret_need_to_hide 
+        esxi.esxi_password = '********' #secret_need_to_hide 
         esxi.esxi_virtual_network = 'K8s_LAN'
         esxi.esxi_disk_store = 'int_Sas-R6_4d'
         esxi.guest_name = 'K8s_Jenkins'         
